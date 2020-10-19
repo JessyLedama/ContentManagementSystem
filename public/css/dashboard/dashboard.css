@@ -1,7 +1,8 @@
 .dashboard-card{
-    background: gray;
+    background: #103257;
     margin: 5% 80px 5px 20px;
     padding: 2% 5% 2% 5%;
     border-radius: 5px;
+    color: white;
 }
 

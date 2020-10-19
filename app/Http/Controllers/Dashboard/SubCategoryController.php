@@ -57,7 +57,7 @@ class SubCategoryController extends Controller
 
         session()->flash('success', 'Subcategory has been saved.');
 
-        return redirect()->route('subcategory.edit', $subCategory);
+        return redirect()->route('subcategory.index', $subCategory);
     }
 
     /**

@@ -7,6 +7,36 @@
         <div class="flex-center position-ref full-height">
             <img id="home-cover" src="{{ asset('images/yourDMS.png') }}">            
         </div>
+
+        <div class="home-content row clearfix">
+            <h3 class="section-title"> Categories. </h3>
+
+            @foreach($categories as $category)
+                <span class="category-card">
+                    {{ $category -> name }} 
+                </span>                  
+            @endforeach
+        </div>
+
+        <div class="home-content row clearfix">
+            <h3 class="section-title"> Subcategories. </h3>
+            
+            @foreach($subcategories as $subcategory)
+                <span class="category-card">
+                    {{ $subcategory -> name }} 
+                </span>                  
+            @endforeach
+        </div>
+
+        <div class="home-content row clearfix">
+            <h3 class="section-title"> Members. </h3>
+            
+            @foreach($members as $data)
+                <span class="category-card">
+                    {{ $data -> name }} 
+                </span>                  
+            @endforeach
+        </div>
     </section>
 @endsection
 

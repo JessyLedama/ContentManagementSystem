@@ -10,11 +10,11 @@
             <div id="category-list">
                 <h4 class="clearfix desktop">
                     <span class="pull-left">
-                        Departments
+                        Categories
                     </span>
                     
                     <a href="{{ route('category.create') }}" class="pull-right">
-                        Add department
+                        Add Category
                     </a>
                 </h4>
 
@@ -24,12 +24,12 @@
                             <i class="lnr lnr-arrow-left"></i>
                         </a>
                         
-                        Department
+                        Category
                     </h4>
 
                     <a href="{{ route('category.create') }}">
                         <i class="lnr lnr-file-add"></i>
-                        Add department
+                        Add Category
                     </a>
                 </div>
 

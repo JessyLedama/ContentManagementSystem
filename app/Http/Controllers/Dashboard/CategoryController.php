@@ -52,7 +52,7 @@ class CategoryController extends Controller
 
         session()->flash('success', 'Category has been saved.');
 
-        return redirect()->route('category.edit', $category);
+        return redirect()->route('category.index', $category);
     }
 
     /**

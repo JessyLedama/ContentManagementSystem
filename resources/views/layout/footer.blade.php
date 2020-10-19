@@ -63,11 +63,11 @@
     </div>
     <p id="copyright" class="clearfix">
         <span class="pull-left">
-            &copy; {{ date('Y') }} JGPMC. All rights reserved.
+            &copy; {{ date('Y') }} Data Management System. | All rights reserved.
         </span>
         <span class="pull-left" id="brand-designers">
             Made by
-            <a href="https://www.facebook.com/gorobrands/" target="_blank">
+            <a class="pull-right" href="https://www.facebook.com/gorobrands/" target="_blank">
                 <strong>SIMI Technologies</strong>
             </a>
         </span>

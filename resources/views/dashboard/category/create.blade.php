@@ -56,7 +56,7 @@
                 <button type="submit">Save</button>
             </form>
         </article>
-    </section>
+    </section> 
 @endsection
 
 @section('css')

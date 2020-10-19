@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Category;
 use App\Product;
+use App\SubCategory;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,10 @@ class HomeController extends Controller
 
         $featuredProducts = Product::whereFeatured(true)->inRandomOrder()->take(5)->get();
 
-        return view('customer.welcome', compact('categories', 'featuredProducts'));
+        $subcategories = SubCategory::all();
+
+        $members = User::all();
+
+        return view('customer.welcome', compact('categories', 'featuredProducts','subcategories', 'members'));
     }
 }
