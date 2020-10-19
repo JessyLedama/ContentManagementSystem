@@ -1,0 +1,33 @@
+#address-book {
+    color: #103257;
+}
+#address-book h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#address-book > h4 > a {
+    font-weight: 500;
+    line-height: 18px;
+    font-size: 14px;
+    color: #103257;
+}
+#address-book > h4 > a:hover {
+    color: #c82088;
+}
+#address-book div {
+    line-height: 2.4;
+}
+.address {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.manage-address > * {
+    cursor: pointer;
+    color: #103257;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 13px;
+}
+.manage-address > *:hover {
+    color: #c82088;
+}

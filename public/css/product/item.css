@@ -1,0 +1,114 @@
+.product {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: calc(20% - 32px);
+    margin: 5px;
+    padding: 10px;
+    background: #fff;
+}
+.product:hover {
+    border-color: #c82088;
+}
+.product-cover-link {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+}
+.product-cover-link .before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 5px);
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-cover-link .before i {
+    color: #fff;
+    font-size: 90px;
+}
+.product-cover {
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.remove-from-wishlist {
+    display: block;
+    font-size: 11px;
+    margin: 10px 0;
+    text-align: center;
+    color: #103257;
+    cursor: pointer;
+}
+.product-name {
+    font-weight: 500;
+    font-size: 12px;
+    color: #103257;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product-price {
+    display: block;
+    margin: 0 0 5px;
+    text-align: center;
+}
+.product-price .regular-price {
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: #c82088;
+}
+.product-price .sale-price {
+    color: #c82088;
+    font-size: 13px;
+}
+.product-additions {
+    padding: 5px;
+}
+.product-likes {
+    display: flex;
+    color: #103257;
+    margin-right: 10px;
+    width: calc(70% - 10px);
+    vertical-align: middle;
+    cursor: pointer;
+}
+.product-likes i {
+    font-size: 20px;
+    margin-right: 7px;
+    color: #103257;
+}
+.product-likes i.lni-heart-filled, .product-likes .count.liked {
+    color: #c82088;
+}
+.product-likes .count {
+    line-height: 20px;
+    font-size: 13px;
+    color: #103257;
+}
+.view-product {
+    text-transform: capitalize;
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 13px;
+    color: #103257;
+}
+.view-product:hover {
+    color: #c82088;
+}
+
+@media (max-width: 767px) {
+    .product-cover {
+        height: 140px;
+    }
+    .product-likes .count {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,47 @@
+#order a {
+    color: #103257;
+}
+#order a:hover {
+    color: #c82088;
+}
+#order-details, #address {
+    color: #103257;
+    padding: 10px;
+    width: calc(50% - 20px);
+}
+#order-details > h3, #address > h3, #catalogue > h3 {
+    padding: 20px 10px;
+    color: #103257;
+    font-size: 18px;
+    font-weight: 600;
+}
+#order-details span, #address span {
+    display: block;
+    line-height: 2;
+    padding: 0 10px;
+}
+#catalogue {
+    border-top: 1px solid #eee;
+}
+#catalogue .product {
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.3333% - 20px);
+}
+#catalogue .product-cover {
+    width: 100%;
+    height: 150px;
+}
+#catalogue .product-name, #catalogue .product-sale-price {
+    color: #103257;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    #order-details, #address {
+        width: calc(100% - 20px);
+    }
+    #catalogue .product {
+        width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,77 @@
+footer {
+    padding: 10px 0;
+}
+footer * {
+    color: #103257;
+}
+footer a:hover {
+    color: #c82088;
+}
+footer > .clearfix {
+    margin: 0 5%;
+}
+footer > .clearfix > div {
+    margin: 10px;
+}
+footer > .clearfix > div:first-child {
+    width: calc(16% - 20px);
+}
+footer > .clearfix > div:not(:first-child) {
+    width: calc(21% - 20px);
+}
+#footer-logo {
+    width: 70%;
+}
+footer > .clearfix > div h4 {
+    margin-bottom: 10px;
+}
+footer > .clearfix > div ul * {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+.footer-payment-icon {
+    width: 34px;
+}
+#copyright {
+    font-size: 12px;
+    color: #888;
+    margin: 10px 2%;
+    padding: 10px 0;
+    border-top: 1px solid #dadada;
+}
+#copyright > span {
+    line-height: 34px;
+}
+#brand-designers {
+    color: #103257;
+    margin-left: 20px;
+}
+#brand-designers a:hover strong {
+    color: #c82088;
+}
+
+@media (max-width: 767px) {
+    footer > .clearfix > div {
+        width: calc(100% - 20px) !important;
+        margin-bottom: 25px;
+    }
+    #copyright {
+        margin: 10px calc(5% + 10px);
+    }
+    #copyright > span {
+        float: none;
+    }
+    #copyright * {
+        font-size: 12px;
+    }
+    #brand-designers {
+        margin-left: 0;
+    }
+    #footer-logo {
+        width: 53%;
+        margin-left: -16px;
+        margin-bottom: -5px;
+    }
+}

@@ -1,0 +1,107 @@
+section {
+    padding: 180px 0 20px;
+    background: #f8f5f3;
+}
+.section-title {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 20px 0;
+    color: #103257;
+}
+.section-title small {
+    display: block;
+    font-weight: 400;
+    margin-top: 3px;
+    font-size: 13px;
+}
+#filter-products {
+    margin: 10px 20px;
+    text-align: center;
+}
+#filter-products > div:nth-child(odd) {
+    width: 30%;
+}
+#filter-products > div:nth-child(even) {
+    width: 40%;
+}
+#filter-products .input-group {
+    display: inline-block;
+    margin: 10px auto 20px;
+}
+#filter-products .input-group label {
+    color: #103257;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 500;
+}
+#filter-products select, #filter-products input {
+    display: inline-block;
+    padding: 6px 20px;
+    border: 1px solid #103257;
+    border-radius: 2px;
+    color: #c82088;
+}
+#filter-products input[type="number"] {
+    width: 100px;
+}
+#filter-products ::placeholder {
+    color: #c82088;
+}
+#filter-products button {
+    display: inline-block;
+    padding: 6px 20px;
+    margin: 0 auto 20px 10px;
+    border: 1px solid #103257;
+    border-radius: 2px;
+    color: #fff;
+    background: #103257;
+    cursor: pointer;
+}
+#filter-products button:hover {
+    background: #c82088;
+    border-color: #c82088;
+}
+.products-container > .product {
+    width: calc(20% - 32px);
+    margin: 10px;
+    padding: 5px;
+}
+#no-products {
+    text-align: center;
+    color: #103257;
+    padding: 20px 5%;
+}
+#loading {
+    display: none;
+}
+#seo-copy {
+    margin: 20px 5%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    color: #103257;
+}
+
+@media (max-width: 767px) {
+    #filter-products > div, #filter-products > div:nth-child(odd) .input-group {
+        width: 100% !important;
+    }
+    #filter-products .input-group {
+        margin: 10px auto;
+    }
+    #filter-products > div:nth-child(2) > span {
+        width: 17%;
+    }
+    #filter-products > div:nth-child(2) .input-group input[type="number"] {
+        width: calc(44% - 22px);
+        padding: 6px 10px;
+    }
+    #filter-products select {
+        width: 100%;
+    }
+    .products-container > .product {
+        width: calc(50% - 12px);
+        margin: 0;
+    }
+}

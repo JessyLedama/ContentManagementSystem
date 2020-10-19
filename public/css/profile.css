@@ -1,0 +1,48 @@
+#edit-profile-form h4 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #103257;
+}
+#edit-profile-form input:not([type="checkbox"]):not([type="radio"]), #edit-profile-form textarea, #edit-profile-form select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #103257;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color: #c82088;
+    width: calc(100% - 42px);
+}
+#edit-profile-form label {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: #103257;
+    width: calc(100% - 42px);
+    display: block;
+}
+#email-input {
+    width: calc(100% - 42px);
+}
+.input-group > div {
+    width: 50%;
+}
+#edit-profile-form button {
+    padding: 10px;
+    margin: 20px 10px;
+    width: calc(100% - 20px);
+    color: #fff;
+    background: #103257;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#edit-profile-form button:hover {
+    background: #c82088;
+}
+
+@media (max-width: 767px) {
+    #name-group > input, #password-group > input {
+        width: calc(100% - 42px);
+    }
+}
